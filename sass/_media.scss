@@ -1,0 +1,156 @@
+@include Md {
+    .h2 {
+        font-size: 1.8rem;
+    }
+    header {
+        .logo {
+            width: 50%;
+        }
+    }
+    .contact {
+        .contact-content {
+            width: 100%;
+            left: 0;
+            form {
+                textarea {
+                    height: 12vh;
+                }
+            }
+        }
+    }
+}
+
+@include Sm {
+    header {
+        ul {
+            background-color: $secondaryColor;
+            display: none;
+            width: 100%;
+            text-align: center;
+            &.open {
+                padding: 10px;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 45px;
+                width: 100%;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+                li {
+                    display: block;
+                    margin: 10px;
+                    a {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .menu-icon {
+            display: block;
+        }
+    }
+    .home {
+        .home-content {
+            left: 29%;
+            transform: translate(-19%, -50%);
+            -webkit-transform: translate(-19%, -50%);
+            -moz-transform: translate(-19%, -50%);
+            -ms-transform: translate(-19%, -50%);
+            -o-transform: translate(-19%, -50%);
+        }
+    }
+    .info {
+        height: 65vh;
+        .info-content {
+            left: 38%;
+            transform: translate(-32%, -50%);
+            -webkit-transform: translate(-32%, -50%);
+            -moz-transform: translate(-32%, -50%);
+            -ms-transform: translate(-32%, -50%);
+            -o-transform: translate(-32%, -50%);
+        }
+    }
+    .service {
+        .service-content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact {
+        .contact-content {
+            width: 100%;
+            left: 0;
+            form {
+                textarea {
+                    height: 25vh;
+                }
+            }
+        }
+    }
+}
+
+@include Xs {
+    .h2 {
+        font-size: 2rem;
+    }
+    .info {
+        height: 85vh;
+    }
+    .service {
+        .service-content {
+            grid-template-columns: 1fr;
+        }
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .contact {
+        .contact-content {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+@include Xxs {
+    .h2 {
+        font-size: 1.5rem;
+    }
+    .contact {
+        .contact-content {
+            width: 100%;
+            left: 0;
+            form {
+                textarea {
+                    height: 20vh;
+                }
+                button {
+                    margin-top: 136px;
+                }
+            }
+        }
+    }
+}
+
+@include Xxxs {
+    .home {
+        height: 130vh;
+    }
+    .info {
+        height: 100vh;
+    }
+    .contact {
+        .contact-content {
+            form {
+                textarea {
+                    height: 30vh;
+                }
+            }
+        }
+    }
+}
